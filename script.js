@@ -5,5 +5,7 @@ function toggleRow(rowId) {
     // Toggle display and expanded class
     row.style.display = row.style.display === 'table-row' ? 'none' : 'table-row';
     mainRow.classList.toggle('expanded'); // Add 'expanded' class for arrow rotation
+  
+  
   }
   

@@ -91,7 +91,7 @@ hr {
 /* stats */
 /* Center the table to the left side with padding */
 .stats-table {
-    max-width: 800px;
+    max-width: 675px;
     margin: 20px;
     font-family: Arial, sans-serif;
     border-radius: 15px;
@@ -115,6 +115,8 @@ hr {
     padding: 15px;
     transition: background-color 0.3s ease;
     border-radius: 10px;
+    font-weight: 500;
+    font-family: 'Montserrat';
   }
   
   /* Hover effect for main rows */
@@ -136,6 +138,7 @@ hr {
   .arrow {
     float: right;
     transition: transform 0.3s ease;
+    font-size: 48px;
   }
   
   /* Rotate arrow when row is expanded */
@@ -150,3 +153,16 @@ hr {
     margin: 0;
   }
   
+
+li {
+  font-family: 'Montserrat';
+  font-size: 26px;
+}
+  
+.links {
+  font-family: monospace;
+  color: rgb(6, 6, 250);
+  font-size: 40px;
+  text-decoration-style: dotted;
+  text-decoration-color: black;
+}

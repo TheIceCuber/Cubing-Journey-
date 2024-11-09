@@ -21,6 +21,9 @@
                 </div>
             </div>
         </section>    <img src="cube.webp" alt="this is a cube" width="250px" style="float: right; margin-top: 50px;">
+        <a href="worldcubeassociation.org/persons/2021DIAM01" class="links">My WCA Profile</a>
+        <br>
+        <a href="youtube.com/@theicecuber" class="links">My YouTube Channel</a>
         <h1 class="title">My Cubing Journey</h1>
         <br>
         <br>
@@ -31,44 +34,63 @@
         <br>
       
         <h3 class="text" style="text-indent: 230px;">Hi, my name is Josh and this is my cubing journey.</h3>
-        <br>
+ 
         <p class="p-text">I remember my classmate solving a Rubik's Cube, and I thought it was SO cool. That night, I went home and solved a cube for the first time. Little did I know how much of an impact that would have on my life now...</p>
         <hr>
-        <p class="p-text">I solved my first cube on April 6th, 2021, marking the beginning of my cubing journey. <br><br>Here are some stats since then:</p>
-          <div class="stats-table">
+        <iframe src="Rubik's Cube.html" width="600" height="400" style="border:none; float: right;"></iframe>
+        <p class="p-text">I solved my first cube on April 6th, 2021, marking the beginning of my cubing journey.<br>Check out some of my stats since then:</p>
+      
+        <div class="stats-table">
             <table>
               <tr class="main-row" onclick="toggleRow('comp-stats')">
-                <td>Competitions Attended <span class="arrow">&#9660;</span></td>
-                <td id="comp-count">5</td>
+                <td>Competitions Attended:<span class="arrow">&#9660;</span></td>
+                <td id="comp-count"></td>
               </tr>
               <tr id="comp-stats" class="sub-row">
                 <td colspan="2">
                   <ul>
-                    <li>2023 Nationals: 20 Solves</li>
-                    <li>2024 Regionals: 15 Solves</li>
+                    <li>Dunkirk Winter 2023: Placed 30 in 3x3</li>
+                    <li>Crystal City Fall 2022: Placed 27 in 2x2</li>
                     <!-- Add more competitions here -->
                   </ul>
                 </td>
               </tr>
           
               <tr class="main-row" onclick="toggleRow('official-solves')">
-                <td>Official Solves <span class="arrow">&#9660;</span></td>
-                <td id="solves-count">100</td>
+                <td>Completed Solves:<span class="arrow">&#9660;</span></td>
+                <td id="solves-count"></td>
               </tr>
               <tr id="official-solves" class="sub-row">
                 <td colspan="2">
                   <ul>
-                    <li>3x3: 60 Solves</li>
-                    <li>4x4: 25 Solves</li>
-                    <li>5x5: 15 Solves</li>
+                    <li>Official Solves (In Competition): 327</li>
+                    <li>Solves (At Home): 37,356</li>
                     <!-- Add more puzzle types here -->
                   </ul>
                 </td>
               </tr>
           
               <!-- Add more categories as needed -->
+              <tr class="main-row" onclick="toggleRow('best-times')">
+                <td>Best Times (At Home):<span class="arrow">&#9660;</span></td>
+                <td id="best-times-count"></td>
+              </tr>
+              <tr id="best-times" class="sub-row">
+                <td colspan="2">
+                  <ul>
+                    <li>3x3: 8.465 Seconds</li>
+                    <li>4x4: 46.825 Seconds</li>
+                    <li>2x2: 0.640 Seconds</li>
+                    <!-- Add more best times for different puzzles here -->
+                  </ul>
+                </td>
+              </tr>
+            
             </table>
           </div>
+
+          
+          
           <script src="script.js"></script>
 
     </body>
