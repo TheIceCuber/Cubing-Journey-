@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Jura:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
 
 .title {
     text-align: center;
     font-family: "Sour Gummy", sans-serif;
+    font-size: 55px;
+    margin-right: 200px;
+    float: right;
 }
 
 html {
@@ -11,12 +15,29 @@ html {
     background-repeat: no-repeat;
 }
 
-body{
-    scroll-behavior: smooth;
+hr {
+    background-color: black;
+    height: 7px;
+    border: transparent;
+    border-radius: 12px;
 }
+
+.text {
+    font-family: "Quicksand", serif;
+    font-size: 36px;
+}
+
+.p-text {
+    font-family: "Jura", serif;
+    font-size: 35px;
+    font-weight: 585;
+    margin-left: 20px;
+}
+
 
 .container {
     padding: 2rem;
+    width: 450px;
 }
 
 .slider-wrapper {
@@ -38,7 +59,6 @@ body{
 
 .slider img {
     flex: 1 0 100%;
-    scroll-snap-align: start;
     object-fit: cover;
     width: 300px;
 }
@@ -51,11 +71,13 @@ body{
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
+    scroll-behavior: smooth;
+    transition: 250ms;
 }
 
 .slider-nav a {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 1rem;
+    height: 1rem;
     border-radius: 50%;
     background-color: #fff;
     opacity: 0.75;
@@ -65,3 +87,66 @@ body{
 .slider-nav a:hover {
     opacity: 1;
 }
+
+/* stats */
+/* Center the table to the left side with padding */
+.stats-table {
+    max-width: 800px;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    border-color: black;
+    border-style: dashed;
+  }
+  
+  /* Table styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+  }
+  
+  /* Main rows (initial visible rows) */
+  .main-row {
+    background-color: #2f5ed6;
+    cursor: pointer;
+    font-size: 3em;
+    padding: 15px;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  /* Hover effect for main rows */
+  .main-row:hover {
+    background-color: #56B9F4;
+  }
+  
+  /* Sub-rows (expandable rows) */
+  .sub-row {
+    display: none;
+    background-color: #5278e0;
+    padding: 10px;
+    font-size: 1em;
+    transition: max-height 0.3s ease;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Arrow styling */
+  .arrow {
+    float: right;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Rotate arrow when row is expanded */
+  .main-row.expanded .arrow {
+    transform: rotate(180deg);
+  }
+  
+  /* List styling inside sub-rows */
+  ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+  

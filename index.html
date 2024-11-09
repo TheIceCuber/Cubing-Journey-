@@ -7,25 +7,69 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     </head>
     <body>
+        <section class="container" style="float: right;">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <img id="pic-1" src="holding-cube-standing.jpg" alt="holding-cube-standing">
+                    <img id="pic-2" src="holding-cube-cubicle.jpg" alt="holding-cube-cubicle">
+                    <img id="pic-3" src="held-up-bld.jpeg" alt="held-up-bld">
+                </div>
+                <div class="slider-nav">
+                    <a href="#pic-1"></a>
+                    <a href="#pic-2"></a>
+                    <a href="#pic-3"></a>
+                </div>
+            </div>
+        </section>    <img src="cube.webp" alt="this is a cube" width="250px" style="float: right; margin-top: 50px;">
         <h1 class="title">My Cubing Journey</h1>
         <br>
-        <p>Hi, my name is Josh and this is <b>my</b> cubing journey.</p>
         <br>
-        <p>I first started cubing on April 6th, 2021. I remember that my classmate was solving a Rubik's Cube, and I thought it was SO cool. That night, I went home and solved a cube for the first time. Little did I know how much of an impact that would have on my life now...</p>
-    <br>
-    <section class="container">
-        <div class="slider-wrapper">
-            <div class="slider">
-                <img id="pic-1" src="holding-cube-standing.jpg" alt="holding-cube-standing">
-                <img id="pic-2" src="holding-cube-cubicle.jpg" alt="holding-cube-cubicle">
-                <img id="pic-3" src="held-up-bld.jpeg" alt="held-up-bld">
-            </div>
-            <div class="slider-nav">
-                <a href="#pic-1"></a>
-                <a href="#pic-2"></a>
-                <a href="#pic-3"></a>
-            </div>
-        </div>
-    </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      
+        <h3 class="text" style="text-indent: 230px;">Hi, my name is Josh and this is my cubing journey.</h3>
+        <br>
+        <p class="p-text">I remember my classmate solving a Rubik's Cube, and I thought it was SO cool. That night, I went home and solved a cube for the first time. Little did I know how much of an impact that would have on my life now...</p>
+        <hr>
+        <p class="p-text">I solved my first cube on April 6th, 2021, marking the beginning of my cubing journey. <br><br>Here are some stats since then:</p>
+          <div class="stats-table">
+            <table>
+              <tr class="main-row" onclick="toggleRow('comp-stats')">
+                <td>Competitions Attended <span class="arrow">&#9660;</span></td>
+                <td id="comp-count">5</td>
+              </tr>
+              <tr id="comp-stats" class="sub-row">
+                <td colspan="2">
+                  <ul>
+                    <li>2023 Nationals: 20 Solves</li>
+                    <li>2024 Regionals: 15 Solves</li>
+                    <!-- Add more competitions here -->
+                  </ul>
+                </td>
+              </tr>
+          
+              <tr class="main-row" onclick="toggleRow('official-solves')">
+                <td>Official Solves <span class="arrow">&#9660;</span></td>
+                <td id="solves-count">100</td>
+              </tr>
+              <tr id="official-solves" class="sub-row">
+                <td colspan="2">
+                  <ul>
+                    <li>3x3: 60 Solves</li>
+                    <li>4x4: 25 Solves</li>
+                    <li>5x5: 15 Solves</li>
+                    <!-- Add more puzzle types here -->
+                  </ul>
+                </td>
+              </tr>
+          
+              <!-- Add more categories as needed -->
+            </table>
+          </div>
+          <script src="script.js"></script>
+
     </body>
 </html>
